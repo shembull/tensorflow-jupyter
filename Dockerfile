@@ -1,9 +1,13 @@
 FROM tensorflow/tensorflow:2.2.0-gpu-jupyter
 
+ENV NODE_VERSION 13
+
 # Add nodeJS
 RUN set -x \
     && curl -sL https://deb.nodesource.com/setup_13.x | bash - \
     && apt-get install -y nodejs
+
+ENV JUPYTERLAB_VERSION 1.2.15
 
 # Install additional packages
 RUN set -x \
