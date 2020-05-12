@@ -1,6 +1,6 @@
 FROM tensorflow/tensorflow:2.2.0-gpu-jupyter
 
-ENV NODE_VERSION 13
+ENV NODE_VERSION 13.14.0
 
 # Add nodeJS
 RUN set -x \
